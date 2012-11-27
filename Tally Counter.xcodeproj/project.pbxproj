@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6A7F97A1665793C000C1F5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A7F9791665793C000C1F5B /* UIKit.framework */; };
+		C6A7F97C1665793C000C1F5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A7F97B1665793C000C1F5B /* Foundation.framework */; };
+		C6A7F97E1665793C000C1F5B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A7F97D1665793C000C1F5B /* CoreGraphics.framework */; };
+		C6A7F9841665793C000C1F5B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6A7F9821665793C000C1F5B /* InfoPlist.strings */; };
+		C6A7F9861665793C000C1F5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A7F9851665793C000C1F5B /* main.m */; };
+		C6A7F98A1665793C000C1F5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A7F9891665793C000C1F5B /* AppDelegate.m */; };
+		C6A7F98D1665793C000C1F5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A7F98C1665793C000C1F5B /* ViewController.m */; };
+		C6A7F9901665793C000C1F5B /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A7F98E1665793C000C1F5B /* ViewController_iPhone.xib */; };
+		C6A7F9931665793C000C1F5B /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A7F9911665793C000C1F5B /* ViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C6A7F9751665793C000C1F5B /* Tally Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tally Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6A7F9791665793C000C1F5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C6A7F97B1665793C000C1F5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C6A7F97D1665793C000C1F5B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C6A7F9811665793C000C1F5B /* Tally Counter-Info.plist */ = {isa = PBXFileReference; path = "Tally Counter-Info.plist"; sourceTree = "<group>"; };
+		C6A7F9831665793C000C1F5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C6A7F9851665793C000C1F5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C6A7F9871665793C000C1F5B /* Tally Counter-Prefix.pch */ = {isa = PBXFileReference; path = "Tally Counter-Prefix.pch"; sourceTree = "<group>"; };
+		C6A7F9881665793C000C1F5B /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		C6A7F9891665793C000C1F5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C6A7F98B1665793C000C1F5B /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		C6A7F98C1665793C000C1F5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C6A7F98F1665793C000C1F5B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		C6A7F9921665793C000C1F5B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6A7F9721665793C000C1F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A7F97A1665793C000C1F5B /* UIKit.framework in Frameworks */,
+				C6A7F97C1665793C000C1F5B /* Foundation.framework in Frameworks */,
+				C6A7F97E1665793C000C1F5B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6A7F96A1665793C000C1F5B = {
+			isa = PBXGroup;
+			children = (
+				C6A7F97F1665793C000C1F5B /* Tally Counter */,
+				C6A7F9781665793C000C1F5B /* Frameworks */,
+				C6A7F9761665793C000C1F5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6A7F9761665793C000C1F5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6A7F9751665793C000C1F5B /* Tally Counter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6A7F9781665793C000C1F5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6A7F9791665793C000C1F5B /* UIKit.framework */,
+				C6A7F97B1665793C000C1F5B /* Foundation.framework */,
+				C6A7F97D1665793C000C1F5B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6A7F97F1665793C000C1F5B /* Tally Counter */ = {
+			isa = PBXGroup;
+			children = (
+				C6A7F9881665793C000C1F5B /* AppDelegate.h */,
+				C6A7F9891665793C000C1F5B /* AppDelegate.m */,
+				C6A7F98B1665793C000C1F5B /* ViewController.h */,
+				C6A7F98C1665793C000C1F5B /* ViewController.m */,
+				C6A7F98E1665793C000C1F5B /* ViewController_iPhone.xib */,
+				C6A7F9911665793C000C1F5B /* ViewController_iPad.xib */,
+				C6A7F9801665793C000C1F5B /* Supporting Files */,
+			);
+			path = "Tally Counter";
+			sourceTree = "<group>";
+		};
+		C6A7F9801665793C000C1F5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6A7F9811665793C000C1F5B /* Tally Counter-Info.plist */,
+				C6A7F9821665793C000C1F5B /* InfoPlist.strings */,
+				C6A7F9851665793C000C1F5B /* main.m */,
+				C6A7F9871665793C000C1F5B /* Tally Counter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6A7F9741665793C000C1F5B /* Tally Counter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6A7F9961665793D000C1F5B /* Build configuration list for PBXNativeTarget "Tally Counter" */;
+			buildPhases = (
+				C6A7F9711665793C000C1F5B /* Sources */,
+				C6A7F9721665793C000C1F5B /* Frameworks */,
+				C6A7F9731665793C000C1F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tally Counter";
+			productName = "Tally Counter";
+			productReference = C6A7F9751665793C000C1F5B /* Tally Counter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6A7F96C1665793C000C1F5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = Jempe;
+			};
+			buildConfigurationList = C6A7F96F1665793C000C1F5B /* Build configuration list for PBXProject "Tally Counter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C6A7F96A1665793C000C1F5B;
+			productRefGroup = C6A7F9761665793C000C1F5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6A7F9741665793C000C1F5B /* Tally Counter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6A7F9731665793C000C1F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A7F9841665793C000C1F5B /* InfoPlist.strings in Resources */,
+				C6A7F9901665793C000C1F5B /* ViewController_iPhone.xib in Resources */,
+				C6A7F9931665793C000C1F5B /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6A7F9711665793C000C1F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6A7F9861665793C000C1F5B /* main.m in Sources */,
+				C6A7F98A1665793C000C1F5B /* AppDelegate.m in Sources */,
+				C6A7F98D1665793C000C1F5B /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6A7F9821665793C000C1F5B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6A7F9831665793C000C1F5B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C6A7F98E1665793C000C1F5B /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6A7F98F1665793C000C1F5B /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		C6A7F9911665793C000C1F5B /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6A7F9921665793C000C1F5B /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6A7F9941665793D000C1F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6A7F9951665793D000C1F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6A7F9971665793D000C1F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tally Counter/Tally Counter-Prefix.pch";
+				INFOPLIST_FILE = "Tally Counter/Tally Counter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C6A7F9981665793D000C1F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tally Counter/Tally Counter-Prefix.pch";
+				INFOPLIST_FILE = "Tally Counter/Tally Counter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6A7F96F1665793C000C1F5B /* Build configuration list for PBXProject "Tally Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6A7F9941665793D000C1F5B /* Debug */,
+				C6A7F9951665793D000C1F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6A7F9961665793D000C1F5B /* Build configuration list for PBXNativeTarget "Tally Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6A7F9971665793D000C1F5B /* Debug */,
+				C6A7F9981665793D000C1F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C6A7F96C1665793C000C1F5B /* Project object */;
+}
