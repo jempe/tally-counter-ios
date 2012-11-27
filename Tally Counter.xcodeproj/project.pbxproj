@@ -16,6 +16,9 @@
 		C6A7F98D1665793C000C1F5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A7F98C1665793C000C1F5B /* ViewController.m */; };
 		C6A7F9901665793C000C1F5B /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A7F98E1665793C000C1F5B /* ViewController_iPhone.xib */; };
 		C6A7F9931665793C000C1F5B /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6A7F9911665793C000C1F5B /* ViewController_iPad.xib */; };
+		C6A7F99D16657A33000C1F5B /* counter_icon-web_ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A7F99A16657A33000C1F5B /* counter_icon-web_ipad.png */; };
+		C6A7F99E16657A33000C1F5B /* counter_icon-web_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A7F99B16657A33000C1F5B /* counter_icon-web_iphone.png */; };
+		C6A7F99F16657A33000C1F5B /* counter_icon-web_iphoneretina.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A7F99C16657A33000C1F5B /* counter_icon-web_iphoneretina.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +26,19 @@
 		C6A7F9791665793C000C1F5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C6A7F97B1665793C000C1F5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C6A7F97D1665793C000C1F5B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C6A7F9811665793C000C1F5B /* Tally Counter-Info.plist */ = {isa = PBXFileReference; path = "Tally Counter-Info.plist"; sourceTree = "<group>"; };
+		C6A7F9811665793C000C1F5B /* Tally Counter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tally Counter-Info.plist"; sourceTree = "<group>"; };
 		C6A7F9831665793C000C1F5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C6A7F9851665793C000C1F5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C6A7F9871665793C000C1F5B /* Tally Counter-Prefix.pch */ = {isa = PBXFileReference; path = "Tally Counter-Prefix.pch"; sourceTree = "<group>"; };
-		C6A7F9881665793C000C1F5B /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		C6A7F9871665793C000C1F5B /* Tally Counter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tally Counter-Prefix.pch"; sourceTree = "<group>"; };
+		C6A7F9881665793C000C1F5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C6A7F9891665793C000C1F5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C6A7F98B1665793C000C1F5B /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		C6A7F98B1665793C000C1F5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C6A7F98C1665793C000C1F5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C6A7F98F1665793C000C1F5B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		C6A7F9921665793C000C1F5B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		C6A7F99A16657A33000C1F5B /* counter_icon-web_ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "counter_icon-web_ipad.png"; sourceTree = "<group>"; };
+		C6A7F99B16657A33000C1F5B /* counter_icon-web_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "counter_icon-web_iphone.png"; sourceTree = "<group>"; };
+		C6A7F99C16657A33000C1F5B /* counter_icon-web_iphoneretina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "counter_icon-web_iphoneretina.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 		C6A7F96A1665793C000C1F5B = {
 			isa = PBXGroup;
 			children = (
+				C6A7F99916657A0F000C1F5B /* icons */,
 				C6A7F97F1665793C000C1F5B /* Tally Counter */,
 				C6A7F9781665793C000C1F5B /* Frameworks */,
 				C6A7F9761665793C000C1F5B /* Products */,
@@ -99,6 +106,16 @@
 				C6A7F9871665793C000C1F5B /* Tally Counter-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6A7F99916657A0F000C1F5B /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				C6A7F99A16657A33000C1F5B /* counter_icon-web_ipad.png */,
+				C6A7F99B16657A33000C1F5B /* counter_icon-web_iphone.png */,
+				C6A7F99C16657A33000C1F5B /* counter_icon-web_iphoneretina.png */,
+			);
+			name = icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +172,9 @@
 				C6A7F9841665793C000C1F5B /* InfoPlist.strings in Resources */,
 				C6A7F9901665793C000C1F5B /* ViewController_iPhone.xib in Resources */,
 				C6A7F9931665793C000C1F5B /* ViewController_iPad.xib in Resources */,
+				C6A7F99D16657A33000C1F5B /* counter_icon-web_ipad.png in Resources */,
+				C6A7F99E16657A33000C1F5B /* counter_icon-web_iphone.png in Resources */,
+				C6A7F99F16657A33000C1F5B /* counter_icon-web_iphoneretina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +274,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tally Counter/Tally Counter-Prefix.pch";
 				INFOPLIST_FILE = "Tally Counter/Tally Counter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -265,6 +286,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tally Counter/Tally Counter-Prefix.pch";
 				INFOPLIST_FILE = "Tally Counter/Tally Counter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
