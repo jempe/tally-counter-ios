@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C69675AB16658A5C00BD02ED /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C69675A816658A5C00BD02ED /* Nunito-Bold.ttf */; };
+		C69675AC16658A5C00BD02ED /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C69675A916658A5C00BD02ED /* Nunito-Light.ttf */; };
+		C69675AD16658A5C00BD02ED /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C69675AA16658A5C00BD02ED /* Nunito-Regular.ttf */; };
 		C6A7F97A1665793C000C1F5B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A7F9791665793C000C1F5B /* UIKit.framework */; };
 		C6A7F97C1665793C000C1F5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A7F97B1665793C000C1F5B /* Foundation.framework */; };
 		C6A7F97E1665793C000C1F5B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A7F97D1665793C000C1F5B /* CoreGraphics.framework */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C69675A816658A5C00BD02ED /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		C69675A916658A5C00BD02ED /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		C69675AA16658A5C00BD02ED /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		C6A7F9751665793C000C1F5B /* Tally Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tally Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A7F9791665793C000C1F5B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C6A7F97B1665793C000C1F5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,9 +61,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C69675A616658A3A00BD02ED /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C69675A816658A5C00BD02ED /* Nunito-Bold.ttf */,
+				C69675A916658A5C00BD02ED /* Nunito-Light.ttf */,
+				C69675AA16658A5C00BD02ED /* Nunito-Regular.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
 		C6A7F96A1665793C000C1F5B = {
 			isa = PBXGroup;
 			children = (
+				C69675A616658A3A00BD02ED /* fonts */,
 				C6A7F99916657A0F000C1F5B /* icons */,
 				C6A7F97F1665793C000C1F5B /* Tally Counter */,
 				C6A7F9781665793C000C1F5B /* Frameworks */,
@@ -175,6 +192,9 @@
 				C6A7F99D16657A33000C1F5B /* counter_icon-web_ipad.png in Resources */,
 				C6A7F99E16657A33000C1F5B /* counter_icon-web_iphone.png in Resources */,
 				C6A7F99F16657A33000C1F5B /* counter_icon-web_iphoneretina.png in Resources */,
+				C69675AB16658A5C00BD02ED /* Nunito-Bold.ttf in Resources */,
+				C69675AC16658A5C00BD02ED /* Nunito-Light.ttf in Resources */,
+				C69675AD16658A5C00BD02ED /* Nunito-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +331,7 @@
 				C6A7F9981665793D000C1F5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

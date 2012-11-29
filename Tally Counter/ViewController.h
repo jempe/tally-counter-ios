@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    NSNumber *currentCount;
+}
+- (IBAction)incButtonPressed:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *countLabel;
 
 @end
