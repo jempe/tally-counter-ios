@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Counter.h"
+
 
 @interface ViewController : UIViewController{
-    NSNumber *currentCount;
+    Counter *currentCounter;
 }
 - (IBAction)incButtonPressed:(id)sender;
+- (IBAction)decButtonPressed:(id)sender;
 @property (strong, nonatomic) IBOutlet UILabel *countLabel;
 
 @end

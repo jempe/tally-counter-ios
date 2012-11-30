@@ -23,8 +23,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-    currentCount = [[NSNumber alloc] initWithInt:0];
+    currentCounter = [[Counter alloc] init];
+    currentCounter.count = 0;
 }
 
 - (void)viewDidUnload
@@ -65,33 +65,18 @@
     }
 }
 
-- (IBAction)incButtonPressed:(id)sender {
+- (IBAction)incButtonPressed:(id)sender 
+{ 
+    (void) currentCounter.increaseCount;
     
-    int value = [currentCount intValue];
-    currentCount = [NSNumber numberWithInt:value + 1];
-    
-    NSMutableString *displayCount = [[NSMutableString alloc] initWithString:@""];
-    NSString *countString = [currentCount stringValue];
-    
+    self.countLabel.text = currentCounter.displayCount;
+}
 
+- (IBAction)decButtonPressed:(id)sender 
+{
+    (void) currentCounter.decreaseCount;
     
-    int countStringLength = [countString length];
-    
-    if(countStringLength < 6)
-    {
-                 
-        for (int i = 0; i < (6 - countStringLength); i++) {
-            [displayCount appendString:@"0"];
-        }
-    }
-    
-    [displayCount appendString:countString];
-    
-    NSLog(@"%@", displayCount);
-    
-    self.countLabel.text = displayCount;
-    
-    
+    self.countLabel.text = currentCounter.displayCount;
 }
 
 @end

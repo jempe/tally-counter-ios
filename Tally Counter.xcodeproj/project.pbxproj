@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C69657BE16681B350021ABE4 /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = C69657BD16681B350021ABE4 /* Counter.m */; };
 		C69675AB16658A5C00BD02ED /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C69675A816658A5C00BD02ED /* Nunito-Bold.ttf */; };
 		C69675AC16658A5C00BD02ED /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C69675A916658A5C00BD02ED /* Nunito-Light.ttf */; };
 		C69675AD16658A5C00BD02ED /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C69675AA16658A5C00BD02ED /* Nunito-Regular.ttf */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C69657BC16681B350021ABE4 /* Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Counter.h; path = ../Counter.h; sourceTree = "<group>"; };
+		C69657BD16681B350021ABE4 /* Counter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Counter.m; path = ../Counter.m; sourceTree = "<group>"; };
 		C69675A816658A5C00BD02ED /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		C69675A916658A5C00BD02ED /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
 		C69675AA16658A5C00BD02ED /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 		C6A7F97F1665793C000C1F5B /* Tally Counter */ = {
 			isa = PBXGroup;
 			children = (
+				C69657BC16681B350021ABE4 /* Counter.h */,
+				C69657BD16681B350021ABE4 /* Counter.m */,
 				C6A7F9881665793C000C1F5B /* AppDelegate.h */,
 				C6A7F9891665793C000C1F5B /* AppDelegate.m */,
 				C6A7F98B1665793C000C1F5B /* ViewController.h */,
@@ -208,6 +213,7 @@
 				C6A7F9861665793C000C1F5B /* main.m in Sources */,
 				C6A7F98A1665793C000C1F5B /* AppDelegate.m in Sources */,
 				C6A7F98D1665793C000C1F5B /* ViewController.m in Sources */,
+				C69657BE16681B350021ABE4 /* Counter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
