@@ -7,7 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C627C26E16694CF70047CD84 /* plus_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C627C26C16694CF70047CD84 /* plus_iphone.png */; };
+		C627C26F16694CF70047CD84 /* plus_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C627C26D16694CF70047CD84 /* plus_iphone@2x.png */; };
+		C627C273166965D70047CD84 /* minus_light_blue_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C627C271166965D70047CD84 /* minus_light_blue_iphone.png */; };
+		C627C274166965D70047CD84 /* minus_light_blue_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C627C272166965D70047CD84 /* minus_light_blue_iphone@2x.png */; };
+		C627C27A16696CD90047CD84 /* CounterModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C627C27816696CD90047CD84 /* CounterModel.xcdatamodeld */; };
+		C676AE9716699BE4009F4D55 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C676AE9616699BE4009F4D55 /* CoreData.framework */; };
 		C69657BE16681B350021ABE4 /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = C69657BD16681B350021ABE4 /* Counter.m */; };
+		C69657C9166854EB0021ABE4 /* minus_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C69657C5166854EB0021ABE4 /* minus_iphone.png */; };
+		C69657CA166854EB0021ABE4 /* minus_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C69657C6166854EB0021ABE4 /* minus_iphone@2x.png */; };
+		C69657CB166854EB0021ABE4 /* plus_light_blue_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C69657C7166854EB0021ABE4 /* plus_light_blue_iphone.png */; };
+		C69657CC166854EB0021ABE4 /* plus_light_blue_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C69657C8166854EB0021ABE4 /* plus_light_blue_iphone@2x.png */; };
 		C69675AB16658A5C00BD02ED /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C69675A816658A5C00BD02ED /* Nunito-Bold.ttf */; };
 		C69675AC16658A5C00BD02ED /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C69675A916658A5C00BD02ED /* Nunito-Light.ttf */; };
 		C69675AD16658A5C00BD02ED /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C69675AA16658A5C00BD02ED /* Nunito-Regular.ttf */; };
@@ -26,8 +36,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C627C26C16694CF70047CD84 /* plus_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_iphone.png; sourceTree = "<group>"; };
+		C627C26D16694CF70047CD84 /* plus_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus_iphone@2x.png"; sourceTree = "<group>"; };
+		C627C271166965D70047CD84 /* minus_light_blue_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus_light_blue_iphone.png; sourceTree = "<group>"; };
+		C627C272166965D70047CD84 /* minus_light_blue_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "minus_light_blue_iphone@2x.png"; sourceTree = "<group>"; };
+		C627C27916696CD90047CD84 /* CounterModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CounterModel.xcdatamodel; sourceTree = "<group>"; };
+		C676AE9616699BE4009F4D55 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C69657BC16681B350021ABE4 /* Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Counter.h; path = ../Counter.h; sourceTree = "<group>"; };
 		C69657BD16681B350021ABE4 /* Counter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Counter.m; path = ../Counter.m; sourceTree = "<group>"; };
+		C69657C5166854EB0021ABE4 /* minus_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus_iphone.png; sourceTree = "<group>"; };
+		C69657C6166854EB0021ABE4 /* minus_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "minus_iphone@2x.png"; sourceTree = "<group>"; };
+		C69657C7166854EB0021ABE4 /* plus_light_blue_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_light_blue_iphone.png; sourceTree = "<group>"; };
+		C69657C8166854EB0021ABE4 /* plus_light_blue_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus_light_blue_iphone@2x.png"; sourceTree = "<group>"; };
 		C69675A816658A5C00BD02ED /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		C69675A916658A5C00BD02ED /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
 		C69675AA16658A5C00BD02ED /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
@@ -55,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C676AE9716699BE4009F4D55 /* CoreData.framework in Frameworks */,
 				C6A7F97A1665793C000C1F5B /* UIKit.framework in Frameworks */,
 				C6A7F97C1665793C000C1F5B /* Foundation.framework in Frameworks */,
 				C6A7F97E1665793C000C1F5B /* CoreGraphics.framework in Frameworks */,
@@ -64,6 +85,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C69657CD166854F70021ABE4 /* button_images */ = {
+			isa = PBXGroup;
+			children = (
+				C627C271166965D70047CD84 /* minus_light_blue_iphone.png */,
+				C627C272166965D70047CD84 /* minus_light_blue_iphone@2x.png */,
+				C627C26C16694CF70047CD84 /* plus_iphone.png */,
+				C627C26D16694CF70047CD84 /* plus_iphone@2x.png */,
+				C69657C5166854EB0021ABE4 /* minus_iphone.png */,
+				C69657C6166854EB0021ABE4 /* minus_iphone@2x.png */,
+				C69657C7166854EB0021ABE4 /* plus_light_blue_iphone.png */,
+				C69657C8166854EB0021ABE4 /* plus_light_blue_iphone@2x.png */,
+			);
+			name = button_images;
+			sourceTree = "<group>";
+		};
 		C69675A616658A3A00BD02ED /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +113,7 @@
 		C6A7F96A1665793C000C1F5B = {
 			isa = PBXGroup;
 			children = (
+				C69657CD166854F70021ABE4 /* button_images */,
 				C69675A616658A3A00BD02ED /* fonts */,
 				C6A7F99916657A0F000C1F5B /* icons */,
 				C6A7F97F1665793C000C1F5B /* Tally Counter */,
@@ -96,6 +133,7 @@
 		C6A7F9781665793C000C1F5B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C676AE9616699BE4009F4D55 /* CoreData.framework */,
 				C6A7F9791665793C000C1F5B /* UIKit.framework */,
 				C6A7F97B1665793C000C1F5B /* Foundation.framework */,
 				C6A7F97D1665793C000C1F5B /* CoreGraphics.framework */,
@@ -115,6 +153,7 @@
 				C6A7F98E1665793C000C1F5B /* ViewController_iPhone.xib */,
 				C6A7F9911665793C000C1F5B /* ViewController_iPad.xib */,
 				C6A7F9801665793C000C1F5B /* Supporting Files */,
+				C627C27816696CD90047CD84 /* CounterModel.xcdatamodeld */,
 			);
 			path = "Tally Counter";
 			sourceTree = "<group>";
@@ -200,6 +239,14 @@
 				C69675AB16658A5C00BD02ED /* Nunito-Bold.ttf in Resources */,
 				C69675AC16658A5C00BD02ED /* Nunito-Light.ttf in Resources */,
 				C69675AD16658A5C00BD02ED /* Nunito-Regular.ttf in Resources */,
+				C69657C9166854EB0021ABE4 /* minus_iphone.png in Resources */,
+				C69657CA166854EB0021ABE4 /* minus_iphone@2x.png in Resources */,
+				C69657CB166854EB0021ABE4 /* plus_light_blue_iphone.png in Resources */,
+				C69657CC166854EB0021ABE4 /* plus_light_blue_iphone@2x.png in Resources */,
+				C627C26E16694CF70047CD84 /* plus_iphone.png in Resources */,
+				C627C26F16694CF70047CD84 /* plus_iphone@2x.png in Resources */,
+				C627C273166965D70047CD84 /* minus_light_blue_iphone.png in Resources */,
+				C627C274166965D70047CD84 /* minus_light_blue_iphone@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +261,7 @@
 				C6A7F98A1665793C000C1F5B /* AppDelegate.m in Sources */,
 				C6A7F98D1665793C000C1F5B /* ViewController.m in Sources */,
 				C69657BE16681B350021ABE4 /* Counter.m in Sources */,
+				C627C27A16696CD90047CD84 /* CounterModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +388,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C627C27816696CD90047CD84 /* CounterModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C627C27916696CD90047CD84 /* CounterModel.xcdatamodel */,
+			);
+			currentVersion = C627C27916696CD90047CD84 /* CounterModel.xcdatamodel */;
+			path = CounterModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C6A7F96C1665793C000C1F5B /* Project object */;
 }

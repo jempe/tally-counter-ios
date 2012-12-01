@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="10K549" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Counter" syncable="YES">
+        <attribute name="count" optional="YES" attributeType="Integer 16" minValueString="0" maxValueString="100000" defaultValueString="0" syncable="YES"/>
+        <attribute name="forward" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Counter" positionX="160" positionY="192" width="128" height="90"/>
+    </elements>
+</model>
