@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @implementation ViewController
-@synthesize countLabel;
+@synthesize countLabel, portraitView, landscapeView;
 
 - (void)didReceiveMemoryWarning
 {
@@ -23,6 +23,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:@"UIDeviceOrientationDidChangeNotification" object:nil];
+    
     currentCounter = [[Counter alloc] init];
     currentCounter.count = 0;
 }
@@ -30,6 +34,9 @@
 - (void)viewDidUnload
 {
     [self setCountLabel:nil];
+    portraitView = nil;
+    landscapeView = nil;
+    portraitView = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -57,12 +64,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    } else {
-        return YES;
-    }
+       return YES;
 }
 
 - (IBAction)incButtonPressed:(id)sender 
@@ -77,6 +79,20 @@
     (void) currentCounter.decreaseCount;
     
     self.countLabel.text = currentCounter.displayCount;
+}
+
+- (void) orientationChanged:(id)object
+{  
+	UIInterfaceOrientation interfaceOrientation = [[object object] orientation];
+	
+	if (interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) 
+	{
+		self.view = self.portraitView;
+	} 
+	else 
+	{
+		self.view = self.landscapeView;
+	}
 }
 
 @end
