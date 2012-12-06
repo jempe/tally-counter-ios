@@ -83,7 +83,7 @@
 
 - (void) orientationChanged:(id)object
 {  
-	UIInterfaceOrientation interfaceOrientation = [[object object] orientation];
+	UIDeviceOrientation interfaceOrientation = [[object object] orientation];
 	
 	if (interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) 
 	{
