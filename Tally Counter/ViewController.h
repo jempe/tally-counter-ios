@@ -20,6 +20,7 @@
 - (IBAction)incButtonPressed:(id)sender;
 - (IBAction)decButtonPressed:(id)sender;
 @property (strong, nonatomic) IBOutlet UILabel *countLabel;
+@property (strong, nonatomic) IBOutlet UILabel *countLabelPortrait;
 
 @property (strong, nonatomic) IBOutlet UIView *portraitView;
 @property (strong, nonatomic) IBOutlet UIView *landscapeView;

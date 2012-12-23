@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @implementation ViewController
+@synthesize countLabelPortrait;
 @synthesize countLabel, portraitView, landscapeView;
 
 - (void)didReceiveMemoryWarning
@@ -28,7 +29,12 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:@"UIDeviceOrientationDidChangeNotification" object:nil];
     
     currentCounter = [[Counter alloc] init];
-    currentCounter.count = 0;
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    int current_count = [defaults integerForKey:@"count"];
+    
+    currentCounter.count = current_count;
+    self.countLabel.text = self.countLabelPortrait.text = currentCounter.displayCount;
 }
 
 - (void)viewDidUnload
@@ -37,6 +43,7 @@
     portraitView = nil;
     landscapeView = nil;
     portraitView = nil;
+    [self setCountLabelPortrait:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -71,14 +78,14 @@
 { 
     (void) currentCounter.increaseCount;
     
-    self.countLabel.text = currentCounter.displayCount;
+    self.countLabel.text = self.countLabelPortrait.text = currentCounter.displayCount;
 }
 
 - (IBAction)decButtonPressed:(id)sender 
 {
     (void) currentCounter.decreaseCount;
     
-    self.countLabel.text = currentCounter.displayCount;
+    self.countLabel.text = self.countLabelPortrait.text = currentCounter.displayCount;
 }
 
 - (void) orientationChanged:(id)object

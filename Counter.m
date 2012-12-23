@@ -35,6 +35,10 @@
     {
         count = 0;
     }
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setInteger:count forKey:@"count"];
+    [defaults synchronize];
 }
 
 - (NSString *) displayCount
