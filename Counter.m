@@ -13,6 +13,10 @@
 - (int) count 
 {
     return count;
+    
+    // comentario hecho por HUGO
+    
+    // segundo cambio por HUGO
 }
 
 - (void) increaseCount
