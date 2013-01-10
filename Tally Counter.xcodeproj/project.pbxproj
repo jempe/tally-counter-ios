@@ -345,11 +345,19 @@
 		C6A7F9971665793D000C1F5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Juan Castro (8S3L5XB2K6)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tally Counter/Tally Counter-Prefix.pch";
 				INFOPLIST_FILE = "Tally Counter/Tally Counter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "917C6F95-8AD3-4104-8C47-01D612E87961";
+				SDKROOT = iphoneos5.0;
+				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -357,11 +365,18 @@
 		C6A7F9981665793D000C1F5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				CODE_SIGN_IDENTITY = "iPhone Developer: Juan Castro (8S3L5XB2K6)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tally Counter/Tally Counter-Prefix.pch";
 				INFOPLIST_FILE = "Tally Counter/Tally Counter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "917C6F95-8AD3-4104-8C47-01D612E87961";
+				SDKROOT = iphoneos5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
