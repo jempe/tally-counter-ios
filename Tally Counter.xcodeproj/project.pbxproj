@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C62361F816AE26650096B4EE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C62361F616AE26650096B4EE /* Localizable.strings */; };
 		C627C26E16694CF70047CD84 /* plus_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C627C26C16694CF70047CD84 /* plus_iphone.png */; };
 		C627C26F16694CF70047CD84 /* plus_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C627C26D16694CF70047CD84 /* plus_iphone@2x.png */; };
 		C627C273166965D70047CD84 /* minus_light_blue_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C627C271166965D70047CD84 /* minus_light_blue_iphone.png */; };
@@ -36,11 +37,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C62361F716AE26650096B4EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C62361FA16AE26950096B4EE /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C627C26C16694CF70047CD84 /* plus_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_iphone.png; sourceTree = "<group>"; };
 		C627C26D16694CF70047CD84 /* plus_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus_iphone@2x.png"; sourceTree = "<group>"; };
 		C627C271166965D70047CD84 /* minus_light_blue_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus_light_blue_iphone.png; sourceTree = "<group>"; };
 		C627C272166965D70047CD84 /* minus_light_blue_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "minus_light_blue_iphone@2x.png"; sourceTree = "<group>"; };
 		C627C27916696CD90047CD84 /* CounterModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CounterModel.xcdatamodel; sourceTree = "<group>"; };
+		C640B99316A640DF0004905A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C676AE9616699BE4009F4D55 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C69657BC16681B350021ABE4 /* Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Counter.h; path = ../Counter.h; sourceTree = "<group>"; };
 		C69657BD16681B350021ABE4 /* Counter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Counter.m; path = ../Counter.m; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 		C6A7F9781665793C000C1F5B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C640B99316A640DF0004905A /* AudioToolbox.framework */,
 				C676AE9616699BE4009F4D55 /* CoreData.framework */,
 				C6A7F9791665793C000C1F5B /* UIKit.framework */,
 				C6A7F97B1665793C000C1F5B /* Foundation.framework */,
@@ -144,6 +149,7 @@
 		C6A7F97F1665793C000C1F5B /* Tally Counter */ = {
 			isa = PBXGroup;
 			children = (
+				C62361F616AE26650096B4EE /* Localizable.strings */,
 				C69657BC16681B350021ABE4 /* Counter.h */,
 				C69657BD16681B350021ABE4 /* Counter.m */,
 				C6A7F9881665793C000C1F5B /* AppDelegate.h */,
@@ -214,6 +220,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				es,
 			);
 			mainGroup = C6A7F96A1665793C000C1F5B;
 			productRefGroup = C6A7F9761665793C000C1F5B /* Products */;
@@ -247,6 +254,7 @@
 				C627C26F16694CF70047CD84 /* plus_iphone@2x.png in Resources */,
 				C627C273166965D70047CD84 /* minus_light_blue_iphone.png in Resources */,
 				C627C274166965D70047CD84 /* minus_light_blue_iphone@2x.png in Resources */,
+				C62361F816AE26650096B4EE /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +276,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		C62361F616AE26650096B4EE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C62361F716AE26650096B4EE /* en */,
+				C62361FA16AE26950096B4EE /* es */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		C6A7F9821665793C000C1F5B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -349,14 +367,19 @@
 					armv7,
 					armv6,
 				);
-				CODE_SIGN_IDENTITY = "iPhone Developer: Juan Castro (8S3L5XB2K6)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tally Counter/Tally Counter-Prefix.pch";
 				INFOPLIST_FILE = "Tally Counter/Tally Counter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "917C6F95-8AD3-4104-8C47-01D612E87961";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -369,14 +392,17 @@
 					armv7,
 					armv6,
 				);
-				CODE_SIGN_IDENTITY = "iPhone Developer: Juan Castro (8S3L5XB2K6)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tally Counter/Tally Counter-Prefix.pch";
 				INFOPLIST_FILE = "Tally Counter/Tally Counter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "917C6F95-8AD3-4104-8C47-01D612E87961";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

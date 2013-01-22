@@ -10,13 +10,20 @@
 #import "Counter.h"
 
 
-@interface ViewController : UIViewController{
+@interface ViewController : UIViewController <UIAlertViewDelegate> {
     Counter *currentCounter;
     IBOutlet UIView *landscapeView;
     
     IBOutlet UIView *portraitView;
     
 }
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *optionsButtonLandscape;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *optionsButton;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *resetButton;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *resetButtonLandscape;
+@property (strong, nonatomic) IBOutlet UILabel *counterNameLandscape;
+@property (strong, nonatomic) IBOutlet UILabel *counterName;
+- (IBAction)resetCountPressed:(id)sender;
 - (IBAction)incButtonPressed:(id)sender;
 - (IBAction)decButtonPressed:(id)sender;
 @property (strong, nonatomic) IBOutlet UILabel *countLabel;

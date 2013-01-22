@@ -9,6 +9,12 @@
 #import "ViewController.h"
 
 @implementation ViewController
+@synthesize optionsButtonLandscape;
+@synthesize optionsButton;
+@synthesize resetButton;
+@synthesize resetButtonLandscape;
+@synthesize counterNameLandscape;
+@synthesize counterName;
 @synthesize countLabelPortrait;
 @synthesize countLabel, portraitView, landscapeView;
 
@@ -35,6 +41,13 @@
     
     currentCounter.count = current_count;
     self.countLabel.text = self.countLabelPortrait.text = currentCounter.displayCount;
+    
+    //Localization of UI Elements
+    self.counterName.text = self.counterNameLandscape.text = NSLocalizedString(@"counter", nil);
+    [self.resetButton setTitle: NSLocalizedString(@"reset", nil)];
+    [self.resetButtonLandscape setTitle: NSLocalizedString(@"reset", nil)];
+    [self.optionsButton setTitle: NSLocalizedString(@"options", nil)];
+    [self.optionsButtonLandscape setTitle: NSLocalizedString(@"options", nil)];
 }
 
 - (void)viewDidUnload
@@ -44,6 +57,12 @@
     landscapeView = nil;
     portraitView = nil;
     [self setCountLabelPortrait:nil];
+    [self setCounterName:nil];
+    [self setCounterNameLandscape:nil];
+    [self setResetButtonLandscape:nil];
+    [self setResetButton:nil];
+    [self setOptionsButton:nil];
+    [self setOptionsButtonLandscape:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -74,6 +93,25 @@
        return YES;
 }
 
+- (IBAction)resetCountPressed:(id)sender {
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle: NSLocalizedString(@"reset_count", nil)
+                                                      message: NSLocalizedString(@"want_to_reset", nil)
+                                                     delegate:self
+                                            cancelButtonTitle: NSLocalizedString(@"no", nil)
+                                            otherButtonTitles: NSLocalizedString(@"yes", nil), nil];
+    [message show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
+    if([title isEqualToString:NSLocalizedString(@"yes", nil)])
+    {
+        [currentCounter setCount:0];
+        self.countLabel.text = self.countLabelPortrait.text = currentCounter.displayCount;
+    }
+}
+
 - (IBAction)incButtonPressed:(id)sender 
 { 
     (void) currentCounter.increaseCount;
@@ -92,13 +130,15 @@
 {  
 	UIDeviceOrientation interfaceOrientation = [[object object] orientation];
 	
-	if (interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) 
+            NSLog(@"orientation %u", interfaceOrientation);
+    
+	if (interfaceOrientation == UIInterfaceOrientationLandscapeRight || interfaceOrientation == UIInterfaceOrientationLandscapeLeft) 
 	{
-		self.view = self.portraitView;
+		self.view = self.landscapeView;
 	} 
 	else 
 	{
-		self.view = self.landscapeView;
+		self.view = self.portraitView;
 	}
 }
 

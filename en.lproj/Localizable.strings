@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  Tally Counter
+
+  Created by Juan Castro on 21/01/13.
+  Copyright (c) 2013 Jempe. All rights reserved.
+*/
+"no" = "No";
+"yes" = "Yes";
+"reset_count" = "Reset Count";
+"want_to_reset" = "Do you really want to reset?";
+"counter" = "Counter";
+"reset" = "Reset";
+"options" = "Options";
