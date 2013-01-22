@@ -46,6 +46,7 @@
 		C627C27916696CD90047CD84 /* CounterModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CounterModel.xcdatamodel; sourceTree = "<group>"; };
 		C640B99316A640DF0004905A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C676AE9616699BE4009F4D55 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C6809BFC16AE39570074C20B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C69657BC16681B350021ABE4 /* Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Counter.h; path = ../Counter.h; sourceTree = "<group>"; };
 		C69657BD16681B350021ABE4 /* Counter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Counter.m; path = ../Counter.m; sourceTree = "<group>"; };
 		C69657C5166854EB0021ABE4 /* minus_iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus_iphone.png; sourceTree = "<group>"; };
@@ -290,6 +291,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C6A7F9831665793C000C1F5B /* en */,
+				C6809BFC16AE39570074C20B /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
