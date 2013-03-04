@@ -13,6 +13,7 @@
 		C627C273166965D70047CD84 /* minus_light_blue_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C627C271166965D70047CD84 /* minus_light_blue_iphone.png */; };
 		C627C274166965D70047CD84 /* minus_light_blue_iphone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C627C272166965D70047CD84 /* minus_light_blue_iphone@2x.png */; };
 		C627C27A16696CD90047CD84 /* CounterModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C627C27816696CD90047CD84 /* CounterModel.xcdatamodeld */; };
+		C64369BB16E54AD000A3AD2E /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C64369BA16E54AD000A3AD2E /* Settings.bundle */; };
 		C676AE9716699BE4009F4D55 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C676AE9616699BE4009F4D55 /* CoreData.framework */; };
 		C69657BE16681B350021ABE4 /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = C69657BD16681B350021ABE4 /* Counter.m */; };
 		C69657C9166854EB0021ABE4 /* minus_iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C69657C5166854EB0021ABE4 /* minus_iphone.png */; };
@@ -45,6 +46,7 @@
 		C627C272166965D70047CD84 /* minus_light_blue_iphone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "minus_light_blue_iphone@2x.png"; sourceTree = "<group>"; };
 		C627C27916696CD90047CD84 /* CounterModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CounterModel.xcdatamodel; sourceTree = "<group>"; };
 		C640B99316A640DF0004905A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C64369BA16E54AD000A3AD2E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		C676AE9616699BE4009F4D55 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C6809BFC16AE39570074C20B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C69657BC16681B350021ABE4 /* Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Counter.h; path = ../Counter.h; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		C6A7F96A1665793C000C1F5B = {
 			isa = PBXGroup;
 			children = (
+				C64369BA16E54AD000A3AD2E /* Settings.bundle */,
 				C69657CD166854F70021ABE4 /* button_images */,
 				C69675A616658A3A00BD02ED /* fonts */,
 				C6A7F99916657A0F000C1F5B /* icons */,
@@ -256,6 +259,7 @@
 				C627C273166965D70047CD84 /* minus_light_blue_iphone.png in Resources */,
 				C627C274166965D70047CD84 /* minus_light_blue_iphone@2x.png in Resources */,
 				C62361F816AE26650096B4EE /* Localizable.strings in Resources */,
+				C64369BB16E54AD000A3AD2E /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

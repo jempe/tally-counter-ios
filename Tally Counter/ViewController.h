@@ -17,6 +17,9 @@
     IBOutlet UIView *portraitView;
     
 }
+@property (strong, nonatomic) IBOutlet UILabel *touchAnywhereLandscape;
+
+@property (strong, nonatomic) IBOutlet UILabel *touchAnywherePortrait;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *optionsButtonLandscape;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *optionsButton;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *resetButton;

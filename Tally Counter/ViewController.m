@@ -9,6 +9,8 @@
 #import "ViewController.h"
 
 @implementation ViewController
+@synthesize touchAnywhereLandscape;
+@synthesize touchAnywherePortrait;
 @synthesize optionsButtonLandscape;
 @synthesize optionsButton;
 @synthesize resetButton;
@@ -48,6 +50,9 @@
     [self.resetButtonLandscape setTitle: NSLocalizedString(@"reset", nil)];
     [self.optionsButton setTitle: NSLocalizedString(@"options", nil)];
     [self.optionsButtonLandscape setTitle: NSLocalizedString(@"options", nil)];
+    self.touchAnywherePortrait.text = NSLocalizedString(@"touch_anywhere", nil);
+    self.touchAnywhereLandscape.text = NSLocalizedString(@"touch_anywhere", nil);
+    
 }
 
 - (void)viewDidUnload
@@ -63,6 +68,10 @@
     [self setResetButton:nil];
     [self setOptionsButton:nil];
     [self setOptionsButtonLandscape:nil];
+    [self setTouchAnywherePortrait:nil];
+    [self setTouchAnywhereLandscape:nil];
+    [self setTouchAnywherePortrait:nil];
+    [self setTouchAnywhereLandscape:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -71,11 +80,17 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    self.touchAnywhereLandscape.alpha = 0.0;
+    self.touchAnywherePortrait.alpha = 0.0;
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [UIView animateWithDuration:2 animations:^{
+        self.touchAnywherePortrait.alpha = 1.0;
+        self.touchAnywhereLandscape.alpha = 1.0;
+    }];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -117,6 +132,10 @@
     (void) currentCounter.increaseCount;
     
     self.countLabel.text = self.countLabelPortrait.text = currentCounter.displayCount;
+    [UIView animateWithDuration:0.5 animations:^{
+        self.touchAnywherePortrait.alpha = 0.0;
+        self.touchAnywhereLandscape.alpha = 0.0;
+    }];
 }
 
 - (IBAction)decButtonPressed:(id)sender 
@@ -124,13 +143,16 @@
     (void) currentCounter.decreaseCount;
     
     self.countLabel.text = self.countLabelPortrait.text = currentCounter.displayCount;
+    [UIView animateWithDuration:0.5 animations:^{
+        self.touchAnywherePortrait.alpha = 0.0;
+        self.touchAnywhereLandscape.alpha = 0.0;
+    }];
+    
 }
 
 - (void) orientationChanged:(id)object
 {  
 	UIDeviceOrientation interfaceOrientation = [[object object] orientation];
-	
-            NSLog(@"orientation %u", interfaceOrientation);
     
 	if (interfaceOrientation == UIInterfaceOrientationLandscapeRight || interfaceOrientation == UIInterfaceOrientationLandscapeLeft) 
 	{
